@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container div {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.vs img {
+    height: 170px;
+    width: 170px;
+}
+
+.vs {
+    animation: animate 5s infinite linear;
+}
+
+.celt img {
+    height: 300px;
+    width: 300px;
+}
+
+.manchester img {
+    height: 300px;
+    width: 300px;
+}
+
+.icon {
+    animation: ic 5s linear infinite;
+}
+
+h2 {
+    position: fixed;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%);
+    text-align: center;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
+    background: rgba(0,0,0,.5);
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+
+h3 {
+    display: block;
+    color: #262626;
+    background: #fff;
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    width: 368.5px;
+    text-align: center;
+    transform: translate(-50%);
+    margin: 10px 0;
+    padding: 5px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+
+
+@keyframes animate{
+    
+    0% {
+        transform: translateY(0);   
+    }
+
+    25% {
+        transform: translateY(10px);   
+    }
+
+    50% {
+        transform: translateY(0);   
+    }
+
+    75% {
+        transform: translateY(-10px);   
+    }
+
+    100% {
+        transform: translateY(0);   
+    }
+}
+
+@keyframes ic {
+    0% {
+        transform: perspective(500px) rotateY(0deg);   
+    }
+
+    25% {
+        transform: perspective(500px) rotateY(25deg);   
+    }
+
+    50% {
+        transform: perspective(500px) rotateY(0deg);   
+    }
+
+    75% {
+        transform: perspective(500px) rotateY(-25deg);   
+    }
+
+    100% {
+        transform: perspective(500px rotateY(0deg);   
+    }
+}
+
+
+
